@@ -3,6 +3,7 @@ module "security-group" {
   version = "3.4.0"
 	name = "vidi_sg"
 	vpc_id = var.vpc_id
+	region = var.region
 	tags = {
 		"owner" = "v.didenchuk@scalr.com"
 	}
