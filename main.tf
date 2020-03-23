@@ -5,4 +5,5 @@ module "security-group" {
 	vpc_id = var.vpc_id
 	tags = {
 		"owner" = "v.didenchuk@scalr.com"
-		}}
+	}
+}
