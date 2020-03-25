@@ -3,12 +3,8 @@ provider "aws" {
    region  = "us-east-1"		
  }
 
-module "security-group" {
-  source  = "terraform-aws-modules/security-group/aws"
-  version = "3.4.0"
-	name = "vidi_sg"
-	vpc_id = var.vpc_id
-	tags = {
-		"owner" = "v.didenchuk@scalr.com"
-	}
+module "vpc" {
+	source  = "fc126fa519ca.test-env.scalr.com/org-sgpvfvrkj5ao2j0/vpc/azurerm"
+	version = "1.9.0"
+	# insert 2 required variables here.
 }
