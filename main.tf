@@ -4,7 +4,7 @@ provider "aws" {
  }
 
 module "vpc" {
-	source  = "fc126fa519ca.test-env.scalr.com/org-sgpvfvrkj5ao2j0/vpc/azurerm"
-	version = "1.9.0"
+	source  = "815fb9d8435e.test-env.scalr.com/org-sgpvfvrkj5ao2j0/vpc/azurerm"
+	version = "1.2.3"
 	# insert 2 required variables here.
 }
