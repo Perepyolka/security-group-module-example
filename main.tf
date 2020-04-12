@@ -4,7 +4,7 @@ provider "aws" {
  }
 
 module "security-group" {
-	source  = "fbed13d2b751.test-env.scalr.com/org-sgpvfvrkj5ao2j0/security-group/aws"
+	source  = "2830261a2da4.test-env.scalr.com/org-sgpvfvrkj5ao2j0/security-group/aws"
 	version = "3.3.0"
 	name = "divi-sg"
 	vpc_id = var.vpc_id
