@@ -1,6 +1,6 @@
-module "vpcccac" {
-	source  = "ba4affd88842.test-env.scalr.com/global/vpcccac/aws"
-	version = "2.14.0"
+module "security-group" {
+	source  = "ba4affd88842.test-env.scalr.com/global/security-group/aws"
+	version = "3.4.0"
 	name = "divi-sg"
   	vpc_id = var.vpc_id
 }
