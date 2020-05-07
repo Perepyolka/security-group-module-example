@@ -4,7 +4,7 @@ variable "vpc_id" {
 }
 variable "region" {
   description = "AWS region to use"
-  default = "us-east-1"
+  default = ""
 }
 
 
