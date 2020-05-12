@@ -1,6 +1,6 @@
-provider "aws" {		
-     version = "2.55.0"		
-   }
+# provider "aws" {		
+#      version = "2.55.0"		
+#    }
 
 # resource "aws_security_group" "allow_tls" {
 #      name = "divi-sg-1"
