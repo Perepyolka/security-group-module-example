@@ -1,6 +1,5 @@
 provider "aws" {		
      version = "2.57.0"		
-     region  = var.region		
    }
 
 resource "aws_security_group" "allow_tls" {
