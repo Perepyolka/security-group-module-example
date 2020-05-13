@@ -1,7 +1,7 @@
-# resource "aws_security_group" "allow_tls" {
-#      name = "divi-sg-1"
-#      vpc_id = var.vpc_id
-# }
+resource "aws_security_group" "allow_tls" {
+     name = "divi-sg-1"
+     vpc_id = var.vpc_id
+}
 
 # resource "digitalocean_droplet" "node1" {
 #   name   = "1node1"
