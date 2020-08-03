@@ -6,6 +6,10 @@ module "security-group" {
   source  = "terraform-aws-modules/security-group/aws"
   name = "divi-sg-1"
   vpc_id = var.vpc_id
+  
+  tags = {
+    "owner" = "v_didenchuk@scalr.com"
+    }
   # insert the 2 required variables here
 }
 # resource "digitalocean_droplet" "node1" {
