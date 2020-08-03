@@ -6,6 +6,7 @@ module "security-group" {
   source  = "terraform-aws-modules/security-group/aws"
   name = "divi-sg-1"
   vpc_id = var.vpc_id
+  region = "us-east-1"
   # insert the 2 required variables here
 }
 # resource "digitalocean_droplet" "node1" {
