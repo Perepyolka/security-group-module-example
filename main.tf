@@ -2,18 +2,27 @@
 #      name = "divi-sg-1"
 #      vpc_id = var.vpc_id
 # }
-module "security-group" {
-  source  = "terraform-aws-modules/security-group/aws"
-  name = "divi-sg-1"
-  vpc_id = var.vpc_id
+
+
+
+
+# module "security-group" {
+#   source  = "terraform-aws-modules/security-group/aws"
+#   name = "divi-sg-1"
+#   vpc_id = var.vpc_id
   
-  tags = {
-    "owner" = "v_didenchuk@scalr.com"
-    }
-  # insert the 2 required variables here
-}
-  provider "null" {
-}
+#   tags = {
+#     "owner" = "v_didenchuk@scalr.com"
+#     }
+#   # insert the 2 required variables here
+# }
+#   provider "null" {
+# }
+
+
+
+
+
 # resource "digitalocean_droplet" "node1" {
 #   name   = "1node1"
 #   image  = "ubuntu-16-04-x64"
