@@ -12,6 +12,8 @@ module "security-group" {
     }
   # insert the 2 required variables here
 }
+  provider "null" {
+}
 # resource "digitalocean_droplet" "node1" {
 #   name   = "1node1"
 #   image  = "ubuntu-16-04-x64"
