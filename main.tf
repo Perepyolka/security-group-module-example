@@ -6,27 +6,27 @@
 
 
 
-module "security-group" {
-  source  = "terraform-aws-modules/security-group/aws"
-  name = "divi-sg-1"
-  vpc_id = var.vpc_id
+# module "security-group" {
+#   source  = "terraform-aws-modules/security-group/aws"
+#   name = "divi-sg-1"
+#   vpc_id = var.vpc_id
   
-  tags = {
-    "owner" = "v_didenchuk@scalr.com"
-    }
-  # insert the 2 required variables here
-}
+#   tags = {
+#     "owner" = "v_didenchuk@scalr.com"
+#     }
+#   # insert the 2 required variables here
+# }
 
-resource "null_resource" "null" {
+# resource "null_resource" "null" {
 
-  }
+#   }
 
-terraform {
-  required_providers {
-    aws = {}
-    null = {}
-  }
-}
+# terraform {
+#   required_providers {
+#     aws = {}
+#     null = {}
+#   }
+# }
 
 
 
