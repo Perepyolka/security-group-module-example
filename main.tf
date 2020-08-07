@@ -3,9 +3,6 @@
 #      vpc_id = var.vpc_id
 # }
 
-
-
-
 module "security-group" {
   source  = "terraform-aws-modules/security-group/aws"
   name = "divi-sg-1"
