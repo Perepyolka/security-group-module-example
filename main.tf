@@ -17,9 +17,9 @@ module "security-group" {
   # insert the 2 required variables here
 }
 
-resource "null_resource" "null" {
+# resource "null_resource" "null" {
 
-  }
+#   }
 
 # terraform {
 #   required_providers {
