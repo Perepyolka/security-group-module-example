@@ -8,6 +8,7 @@ module "security-group" {
     "owner" = "v_didenchuk@scalr.com"
     }
 }
+  
 
 # output "sg_name" {
 #   description = "security group name"
