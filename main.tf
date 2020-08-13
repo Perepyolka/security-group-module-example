@@ -1,14 +1,13 @@
-123123
 
-# module "security-group" {
-#   source  = "terraform-aws-modules/security-group/aws"
-#   name = "divi-sg-3"
-#   vpc_id = var.vpc_id
+module "security-group" {
+  source  = "terraform-aws-modules/security-group/aws"
+  name = "divi-sg-3"
+  vpc_id = var.vpc_id
   
-#   tags = {
-#     "owner" = "v_didenchuk@scalr.com"
-#     }
-# }
+  tags = {
+    "owner" = "v_didenchuk@scalr.com"
+    }
+}
 
 # output "sg_name" {
 #   description = "security group name"
@@ -20,7 +19,7 @@
 #     sensitive = true
 # }
   
-# variable "vpc_id" {
-#    default = "vpc-596aa03e"
+variable "vpc_id" {
+   default = "vpc-596aa03e"
 
-# }
+}
