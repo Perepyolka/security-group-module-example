@@ -23,6 +23,6 @@ module "security-group" {
 # }
   
 variable "vpc_id" {
-   default = "vpc-596aa03e"
+#    default = "vpc-596aa03e"
 
 }
