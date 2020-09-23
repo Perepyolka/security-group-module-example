@@ -4,6 +4,6 @@ resource "google_compute_instance" "default" {
   zone         = "us-central1-a"
 
   tags = {
-    “test-env-owner”: “v_didenchuk@scalr.com”
+    "test-env-owner": "v_didenchuk@scalr.com"
     }
 }
