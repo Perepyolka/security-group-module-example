@@ -1,5 +1,5 @@
 module "my_module" {
-    source  = "../../modules/security-group"
+    source  = "../modules/security-group"
  }
 
 
