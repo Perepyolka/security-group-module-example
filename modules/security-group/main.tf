@@ -1,11 +1,9 @@
-resource "aws_security_group" "security_group" {
-  name        = "divi-sg-4"
-  description = "my new security group"
-  vpc_id      = var.vpc_id
-}
+resource "google_compute_instance" "default" {
+  name         = "test"
+  machine_type = "n1-standard-1"
+  zone         = "us-central1-a"
 
-
-variable "vpc_id" {
-   default = "vpc-596aa03e"
-
+  tags = {
+    “test-env-owner”: “v_didenchuk@scalr.com”
+    }
 }
