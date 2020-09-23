@@ -1,3 +1,3 @@
 module "shared-gke" {
-  source                 = "modules/security-group"
+  source                 = "./modules/security-group"
 }
