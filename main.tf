@@ -1,12 +1,4 @@
-module "my_module" {
-    source  = "./modules/security-group"
- }
-
-
-provider "google" {
-  version = "~> 3.39.0"
-}
-
-provider "google-beta" {
-  version = "~> 3.39.0"
+resource "google_compute_network" "vpc_network" {
+  name                    = "my-terraform-network"
+  auto_create_subnetworks = "true"
 }
